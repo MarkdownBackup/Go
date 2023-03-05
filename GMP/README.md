@@ -117,6 +117,39 @@
 
 ### 2、调度器的设计策略
 
+#### 2.1、复用线程
+
+避免频繁的创建、销毁线程，而是对线程的复用。
+
+![fuyong](img/fuyong.png)
+
+- work stealing 机制
+  > 当本地无线程可运行时，尝试从其他线程绑定 P 偷取 G，而不是销毁线程
+  > ![work_stealing](img/work_stealing.png)
+- hand off 机制
+  > 当本地线程因为 G 进行系统调用阻塞时，线程释放绑定的 P，把 P 转移给其他空闲的线程执行
+  > ![hand_off](img/hand_off.png)
+
+#### 2.2、利用并行
+
+GOMAXPROCS 设置 P 的数量，最多有 GOMAXPROCS 个线程分布在多个 CPU 上同时运行。
+
+![bingxing](img/bingxing.png)
+
+#### 2.3、抢占
+
+coroutine 中要等待一个协程主动让出 CPU 才执行下一个协程
+
+在 Go 中 goroutine 最多占用 CPU 10ms 防止其他 goroutine 被饿死
+
+![qiangzhan](img/qiangzhan.png)
+
+#### 2.4、全局 G 队列
+
+当 M 执行 work stealing 从其他 P 偷不到 时，它可以从全局 G 队列获取 G。
+
+![quanjutou](img/quanjutou.png)
+
 ### 3、"go func()"经历了什么过程
 
 ### 4、调度器的生命周期
