@@ -162,3 +162,11 @@ coroutine 中要等待一个协程主动让出 CPU 才执行下一个协程
 ![m0g03](img/m0g03.png)
 
 ### 5、可视化 GMP 编程
+
+#### 5.1、基本 trace 编程
+
+![trace1](img/trace1.png)
+
+#### 5.2、通过 go tool trace 工具打开 trace 文件
+
+![trace2](img/trace2.png)
