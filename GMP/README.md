@@ -157,4 +157,8 @@ coroutine 中要等待一个协程主动让出 CPU 才执行下一个协程
 
 ### 4、调度器的生命周期
 
+![m0g0](img/m0g0.png)
+![m0g02](img/m0g02.png)
+![m0g03](img/m0g03.png)
+
 ### 5、可视化 GMP 编程
