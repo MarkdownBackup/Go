@@ -170,3 +170,7 @@ coroutine 中要等待一个协程主动让出 CPU 才执行下一个协程
 #### 5.2、通过 go tool trace 工具打开 trace 文件
 
 ![trace2](img/trace2.png)
+
+#### 5.3、通过 GODEBUG trace 查看 GMP 信息
+
+![godebugtarce](img/godebugtarce.png)
