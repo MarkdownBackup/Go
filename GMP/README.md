@@ -152,6 +152,9 @@ coroutine 中要等待一个协程主动让出 CPU 才执行下一个协程
 
 ### 3、"go func()"经历了什么过程
 
+![jingli](img/jingli.png)
+![liucheng](img/liucheng.png)
+
 ### 4、调度器的生命周期
 
 ### 5、可视化 GMP 编程
