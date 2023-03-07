@@ -213,3 +213,7 @@ coroutine 中要等待一个协程主动让出 CPU 才执行下一个协程
 ### 场景十：G 发生系统调用/阻塞
 
 ![changjing10](img/changjing10.png)
+
+### 场景十一：G发生非阻塞
+
+![changjing11](img/changjing11.png)
