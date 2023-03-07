@@ -180,3 +180,7 @@ coroutine 中要等待一个协程主动让出 CPU 才执行下一个协程
 ### 场景一：G1 创建 G3
 
 ![changjing1](img/changjing1.png)
+
+### 场景二：G1 执行完毕
+
+![changjing2](img/changjing2.png)
