@@ -196,3 +196,8 @@ coroutine 中要等待一个协程主动让出 CPU 才执行下一个协程
 ### 场景六：唤醒正在休眠的 M
 
 ![changjing6](img/changjing6.png)
+
+### 场景七：被唤醒的 M 从全局队列中取 G
+
+![changjing7](img/changjing7.png)
+![changjing7-2](img/changjing7-2.png)
