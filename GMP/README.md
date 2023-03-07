@@ -174,3 +174,9 @@ coroutine 中要等待一个协程主动让出 CPU 才执行下一个协程
 #### 5.3、通过 GODEBUG trace 查看 GMP 信息
 
 ![godebugtarce](img/godebugtarce.png)
+
+## 三、Go 调度器 GMP 调度场景的全过程分析
+
+### 场景一：G1 创建 G3
+
+![changjing1](img/changjing1.png)
