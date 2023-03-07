@@ -184,3 +184,11 @@ coroutine 中要等待一个协程主动让出 CPU 才执行下一个协程
 ### 场景二：G1 执行完毕
 
 ![changjing2](img/changjing2.png)
+
+### 场景三、四、五：G2 开辟过多的 G
+
+![changjing3](img/changjing3.png)
+
+![changjing4](img/changjing4.png)
+
+![changjing5](img/changjing5.png)
