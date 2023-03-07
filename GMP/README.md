@@ -201,3 +201,7 @@ coroutine 中要等待一个协程主动让出 CPU 才执行下一个协程
 
 ![changjing7](img/changjing7.png)
 ![changjing7-2](img/changjing7-2.png)
+
+### 场景八：M2 从 M1 中偷取 G
+
+![changjing8](img/changjing8.png)
